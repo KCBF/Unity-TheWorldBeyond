@@ -1,0 +1,22 @@
+# Scene API Guide
+
+Using your room surfaces and furniture cubes is crucial for creating the environment.
+
+## Creating the Environment
+A traditional pre-fabricated game level doesn't work in mixed reality because the player's space is unknown. Instead, create the world dynamically by following rules:
+* The walkable virtual space should be flat ground matching the player's real space.
+* The largest playable space Guardian can encompass is 15x15m. Everything outside this space can be static and hand-crafted, but everything within it should be dynamic since every home's play area differs. Create objects in the playable space directly or indirectly from the scene or cull them.
+
+## Using the Scene Directly
+
+[MRUK](https://developers.meta.com/horizon/documentation/unity/unity-mr-utility-kit-overview/) is a utility kit providing tools to build mixed reality experiences. The *MRUK* package is included in this project.
+Navigate to the link for documentation to learn more about the *MRUK* package. You use MRUK directly in the *WorldBeyondManager*. The system creates a polygon mesh for the floor and ceiling by referencing these anchors. Particles line the wall edges and get revealed when a wall is "opened." A *NavMeshObstacle* component is on the wall and furniture prefabs so Oppy can navigate around them. See [`VirtualRoom.InitializeMRUK()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/TheWorldBeyond/Scripts/Environment/RoomEnvironment/VirtualRoom.cs#L287) for more information.
+
+## Using the Scene Indirectly
+Grass shrubs spawn in a grid on the play area except within the room's bounding box. A density map defines the probability of grass appearing in a grid cell as long as it appears outside the room. See [`WorldBeyondEnvironment.SpawnObjectsWithMap()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WorldBeyondEnvironment.cs#L61) for more information. Other objects like trees and rocks are pre-littered around the space and use the [`VirtualRoom.IsPositionInRoom()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/VirtualRoom.cs#L987) function to get deactivated when the game starts. Grass shrubs are also placed around the base of furniture and walls. The system reveals these shrubs when you open any wall. [`VirtualRoom.CreateFurnitureDebris()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/VirtualRoom.cs#L818) handles this functionality.
+
+## Spawning Dynamic Objects
+The coordinates in Unity are unrelated to real space. Finding an unoccupied location in your room can be done using the Scene API. In The World Beyond, we do a line-of-sight raycast from the camera, for example, in [`WorldBeyondManager.GetRandomToyPosition()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WorldBeyondManager.cs#L957). Other suggestions for using the Scene API:
+* Get the wall intersections of the room, inset by a small amount, to place an object in the corner. Copy some code from [`VirtualRoom.GetClockwiseFloorOutline()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/VirtualRoom.cs#L534) and [`SceneMesher.GetInsetDirection()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/SceneMesher.cs#L428). After calculating a position, check the furniture data to ensure there's nothing in the way.
+* Get the bounding box center of the room and hang a fan or light from the ceiling.
+* Only do raycasts behind the player. Using raycasts is an excellent method for spawning zombies or other hidden elements revealed when the player looks in that direction.
