@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4510294d23d964fe59443526f1ca7c4b, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  m_displayName: Welcome
+  m_hierarchyName: Welcome
+  m_context: {fileID: 11400000, guid: 64e0d3105cab50341bb0f05061310dea, type: 2}
+  m_markdownFile: {fileID: 0}
+  m_priority: 1001
+  m_overrideMarkdownText: '# The World Beyond
+
+
+    The World Beyond is a Mixed Reality
+    (MR) project that demonstrates key MR features and how to integrate them into
+    your project using the Presence Platform features.
+
+
+    This codebase serves
+    as a reference and template for MR projects. You can test the experience on <a
+    href="https://www.meta.com/experiences/the-world-beyond/4873390506111025/">App
+    Lab - The World Beyond</a>.
+
+
+
+    ## Project Description
+
+
+    This project
+    showcases the Scene API, Passthrough, Voice SDK, Interaction SDK, and Audio Spatializer
+    features.
+
+
+    Built using the <a href="https://unity.com/">Unity engine</a>
+    with Unity 6000.0.50f1 or higher, it includes the MRUK (Mixed Reality Utility
+    Kit) package, which provides useful tools and methods for mixed reality experiences.
+
+
+
+    ##
+    Dependencies
+
+
+    This project uses the following plugins and software:
+
+
+    -
+    <a href="https://unity.com/download">Unity</a> 6000.0.50f1 or higher
+
+    - <a
+    href="https://developers.meta.com/horizon/documentation/unity/unity-mr-utility-kit-overview/">MRUK
+    (Mixed Reality Utility Kit)</a>
+
+    - <a href="https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/">Meta
+    XR Interaction SDK</a>
+
+    - <a href="https://developers.meta.com/horizon/documentation/unity/voice-sdk-overview/">Voice
+    SDK</a>
+
+    - <a href="https://developers.meta.com/horizon/documentation/unity/audio-spatializer-features/">Audio
+    Spatializer</a>
+
+
+    To test this project within Unity, you need:
+
+
+    - <a
+    href="https://www.meta.com/quest/setup/">The Meta Quest App</a>
+
+    - Mac or
+    Windows
+
+
+
+    ## Documentation
+
+
+    More information is available in the sections
+    below:
+
+
+    - <a href="./Documentation/SceneStructureAndPrefabs.md">Scene Structure
+    & Prefabs</a>
+
+    - <a href="./Documentation/SceneAPIGuide.md">Scene API Guide</a>
+
+    -
+    <a href="./Documentation/PassthroughImplementation.md">Passthrough Implementation</a>
+
+    -
+    <a href="./Documentation/VoiceIntegration.md">Voice Integration</a>
+
+    - <a
+    href="./Documentation/InteractionSystems.md">Interaction Systems</a>
+
+    - <a
+    href="./Documentation/AudioSpatializer.md">Audio Spatializer</a>
+
+    - <a href="./Documentation/SampleScenes.md">Sample
+    Scenes</a>
+
+
+
+    ## Health & Safety Guidelines
+
+
+    When building mixed reality
+    experiences, evaluate your content to offer users a comfortable and safe experience.
+    Refer to the <a href="https://developers.meta.com/horizon/design/mr-health-safety-guideline/">Mixed
+    Reality H&S Guidelines</a> before designing and developing your app using this
+    sample project or Presence Platform Features.
+
+
+
+    ## Remarks
+
+
+    * When
+    prompted to update the hand tracking settings, choose "keep OVRHands".
+
+    *
+    During the APK build, you may be prompted about "Unsupported Input Handling".
+    Choose "Yes" (Ignore and continue).
+
+
+'
+  m_overrideMarkdownRoot: ./

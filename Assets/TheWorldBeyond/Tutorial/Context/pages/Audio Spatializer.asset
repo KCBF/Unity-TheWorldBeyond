@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4510294d23d964fe59443526f1ca7c4b, type: 3}
+  m_Name: Audio Spatializer
+  m_EditorClassIdentifier: 
+  m_displayName: Audio Spatializer
+  m_hierarchyName: Audio Spatializer
+  m_context: {fileID: 11400000, guid: 635a66b71ac92a445812ee08f2980353, type: 2}
+  m_markdownFile: {fileID: 0}
+  m_priority: 1007
+  m_overrideMarkdownText: '# Audio Spatializer
+
+
+    Audio in The World Beyond uses
+    the *Oculus AudioManager* and *Oculus Spatializer*. Understand it deeply from
+    our documentation [here](https://developers.meta.com/horizon/documentation/unity/audio-spatializer-features/).
+    The mixer for the project exists at [Assets/TheWorldBeyond/Audio/WorldBeyondAudioMixer.mixer](../Assets/TheWorldBeyond/Audio/WorldBeyondAudioMixer.mixer).
+
+
+    *
+    Use simple raycasting for occlusion. For instance, if a sound is in the virtual
+    world behind your Passthrough wall. See [`SoundEntry_Manager.HandleObstructed()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/SoundEntry_Manager.cs#L94).
+
+    *
+    The system mutes environment audio when all Passthrough walls are closed. Audio
+    increases as you open each wall. When a wall status changes, the system adjusts
+    the audio in [`AudioManager.SetRoomOpenness()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/AudioManager.cs#L444).
+
+'
+  m_overrideMarkdownRoot: .\Documentation/

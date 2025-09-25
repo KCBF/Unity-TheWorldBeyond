@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4510294d23d964fe59443526f1ca7c4b, type: 3}
+  m_Name: Voice Integration
+  m_EditorClassIdentifier: 
+  m_displayName: Voice Integration
+  m_hierarchyName: Voice Integration
+  m_context: {fileID: 11400000, guid: 64efb5bfa5cf03d4d82263fb432b7580, type: 2}
+  m_markdownFile: {fileID: 0}
+  m_priority: 1005
+  m_overrideMarkdownText: '# Voice Integration
+
+
+    In The World Beyond, the system
+    unlocks Voice control after opening a wall to the virtual world; Oppy listens
+    to you when you gaze at her. For detailed instructions on using the Voice SDK,
+    follow the [developer documentation](https://developers.meta.com/horizon/documentation/unity/voice-sdk-overview/).
+    Examples of using the Voice SDK in The World Beyond:
+
+
+    * *Reaction:* Play
+    an animation on Oppy (hi, jump) or perform a behavior (come). See [`WitConnector.WitResponseReceiver()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WitConnector.cs#L171)
+    for more information.
+
+    * *Transcription:* See the results of your command
+    in Oppy''s speech bubble. See [`WitConnector.LiveTranscriptionHandler()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WitConnector.cs#L171)
+    for more information.
+
+'
+  m_overrideMarkdownRoot: .\Documentation/

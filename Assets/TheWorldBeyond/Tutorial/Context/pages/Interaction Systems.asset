@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4510294d23d964fe59443526f1ca7c4b, type: 3}
+  m_Name: Interaction Systems
+  m_EditorClassIdentifier: 
+  m_displayName: Interaction Systems
+  m_hierarchyName: Interaction Systems
+  m_context: {fileID: 11400000, guid: 2241b0b91b9f6974aa7b934319921263, type: 2}
+  m_markdownFile: {fileID: 0}
+  m_priority: 1006
+  m_overrideMarkdownText: '# Interaction Systems
+
+
+    You can include hands-support
+    using Interaction components with little understanding of the code. Learn more
+    about the [*Interaction SDK*](https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/)
+    from our documentation. In The World Beyond, we use the *Interaction SDK* to
+    let users grab and release energy orbs.
+
+
+    * The *OVRInteraction* object exists
+    under the *OVRCameraRig* prefab. Important fields on the *WorldBeyondManager*
+    game object point to children of this interaction rig.
+
+    * The ball prefab
+    is located in [Assets/TheWorldBeyond/VFX/EnergyBall/EnergyBallPrefab.prefab](../Assets/TheWorldBeyond/VFX/EnergyBall/EnergyBallPrefab.prefab).
+    The *Interaction SDK* manages many components on the object.
+
+    * Other hand
+    behaviors like wall opening or toy switching are custom and exist outside *ISDK*.
+
+'
+  m_overrideMarkdownRoot: .\Documentation/
