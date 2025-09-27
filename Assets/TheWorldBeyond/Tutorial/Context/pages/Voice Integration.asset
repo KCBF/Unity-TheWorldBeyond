@@ -28,11 +28,11 @@ MonoBehaviour:
 
 
     * *Reaction:* Play
-    an animation on Oppy (hi, jump) or perform a behavior (come). See [`WitConnector.WitResponseReceiver()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WitConnector.cs#L171)
+    an animation on Oppy (hi, jump) or perform a behavior (come). See [`WitConnector.WitResponseReceiver()`](../Assets/TheWorldBeyond/Scripts/Wit/WitConnector.cs#L165)
     for more information.
 
     * *Transcription:* See the results of your command
-    in Oppy''s speech bubble. See [`WitConnector.LiveTranscriptionHandler()`](https://github.com/oculus-samples/Unity-TheWorldBeyond/blob/main/Assets/Scripts/WitConnector.cs#L171)
+    in Oppy''s speech bubble. See [`WitConnector.LiveTranscriptionHandler()`](../Assets/TheWorldBeyond/Scripts/Wit/WitConnector.cs#L187)
     for more information.
 
 '
