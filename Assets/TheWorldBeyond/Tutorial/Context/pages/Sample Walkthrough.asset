@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 645f4231a451006409b7afbabdd9f82d, type: 3}
+  m_Name: Sample Walkthrough
+  m_EditorClassIdentifier: 
+  m_displayName: Sample Walkthrough
+  m_hierarchyName: 
+  m_context: {fileID: 11400000, guid: 21a9c85ea5a748049915748db2137f17, type: 2}
+  m_markdownFile: {fileID: 0}
+  m_priority: 0
+  <References>k__BackingField:
+  - Header: Samples
+    Description: There are four samples under the 'Scenes' folder that are not included
+      in the Build that developers can explore.
+    Reference:
+      m_referenceType: 0
+      m_obj: {fileID: 0}
+      m_classType: 
+      m_scene: {fileID: 0}
+      m_name: 
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: PassthroughPet Scene
+    Description: This scene allows you to explore the pet behaviour. It features
+      Oppy and their different functionalities.
+    Reference:
+      m_referenceType: 0
+      m_obj: {fileID: 102900000, guid: 201e3e597f8b54264b2ba97ba45dd5c9, type: 3}
+      m_classType: 
+      m_scene: {fileID: 0}
+      m_name: 
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: SamplePetExperience
+    Description: 'This handles Oppy''s movements to handle walking on the NavMesh
+      and avoiding colliders.
+
+
+      Pressing the index trigger on the right controller
+      sets a target towards which she navigates.'
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 0}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: 201e3e597f8b54264b2ba97ba45dd5c9, type: 3}
+      m_name: SamplePetExperience
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: Pet
+    Description: This handles the animation and looking for Oppy.
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 0}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: 201e3e597f8b54264b2ba97ba45dd5c9, type: 3}
+      m_name: SamplePetExperience/Pet
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: PassthroughRoom Scene
+    Description: 'This scene only loads Scene elements while the wall/ceiling/door/window
+      game objects are destroyed.
+
+
+      A modified ball shooter demonstrates collision
+      with Scene elements.
+
+
+      This scene can serve as a base when your room
+      is the center of a VR. playspace'
+    Reference:
+      m_referenceType: 0
+      m_obj: {fileID: 102900000, guid: b92714560bf5f48139b72ec5beedaba4, type: 3}
+      m_classType: 
+      m_scene: {fileID: 0}
+      m_name: 
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: SamplePassthroughRoom
+    Description: This contains scripts that initializes the room and creates debris.
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 0}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: b92714560bf5f48139b72ec5beedaba4, type: 3}
+      m_name: SamplePassthroughRoom
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: SampleShooter
+    Description: This handles the ball shooter logic.
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 0}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: b92714560bf5f48139b72ec5beedaba4, type: 3}
+      m_name: SampleShooter
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: VirtualFrames Scene
+    Description: 'Rendering a virtual world outside your windows is achieved with
+      rendering tricks shown in this scene.
+
+
+      The virtual environment renders
+      first, then the frame-and-depth-occluder prefab where windows and doors are.
+      Finally, Scene walls render 0 to alpha, revealing Passthrough.'
+    Reference:
+      m_referenceType: 0
+      m_obj: {fileID: 102900000, guid: dc0be34a26e3249468a255ebed9883c5, type: 3}
+      m_classType: 
+      m_scene: {fileID: 0}
+      m_name: 
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: SampleVirtualFrames
+    Description: Initializes the room.
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 102900000, guid: dc0be34a26e3249468a255ebed9883c5, type: 3}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: dc0be34a26e3249468a255ebed9883c5, type: 3}
+      m_name: SampleVirtualFrames
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: VoiceTranscription Scene
+    Description: This sample transcribes the user's speech to text, including a button
+      supported by the Interaction SDK and a text dialog prefab for developers to
+      provide more information to users.
+    Reference:
+      m_referenceType: 0
+      m_obj: {fileID: 102900000, guid: dd4852a789a744e1385bf914ae7671b4, type: 3}
+      m_classType: 
+      m_scene: {fileID: 0}
+      m_name: 
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
+  - Header: SampleVoice
+    Description: Handles permission, listening and transcription of the voice input.
+    Reference:
+      m_referenceType: 5
+      m_obj: {fileID: 102900000, guid: dd4852a789a744e1385bf914ae7671b4, type: 3}
+      m_classType: 
+      m_scene: {fileID: 102900000, guid: dd4852a789a744e1385bf914ae7671b4, type: 3}
+      m_name: SampleVoice
+      m_path: 
+      m_guid: 
+      m_instanceID: 0
